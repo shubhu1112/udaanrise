@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UdaanRise - Career Platform</title>
+
+  <!-- Tailwind CSS -->
+  <link rel="stylesheet" href="../dist/output.css" />
+
+  <!-- Animate.css for animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #0e0e0e, #1a1a1a);
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 1.5rem;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(1020px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    }
+
+    .gold {
+      background: #d4af37;
+      color: #000;
+    }
+
+    .gold-hover:hover {
+      background: #e6c75c;
+    }
+
+    .gold-border {
+      border: 2px solid #d4af37 !important;
+      border-radius: 1.5rem;
+      /* Optional: keep your rounded style */
+    }
+
+    .scale-hover {
+      transition: transform 0.3s ease;
+    }
+
+    .scale-hover:hover {
+      transform: scale(1.05) !important;
+    }
+  </style>
+</head>
+
+<body class="text-white">
+  <!-- NAVIGATION BAR -->
+  <nav class="flex justify-between items-center px-6 py-3 bg-black/80 border-b border-zinc-800 fixed top-0 w-full z-50">
+    <div class="flex items-center space-x-4 h-14">
+      <img src="logo.png" alt="UdaanRise Logo" class="h-16 w-auto object-contain" />
+    </div>
+    <ul class="hidden md:flex space-x-6 text-sm font-medium">
+      <li><a href="#" class="hover:text-yellow-400">Job Listings</a></li>
+      <li><a href="#" class="hover:text-yellow-400">Career Counselling 1:1</a></li>
+      <li><a href="#" class="hover:text-yellow-400">Mentorship 1:1</a></li>
+      <li><a href="#" class="hover:text-yellow-400">Resume Builder</a></li>
+      <li><a href="#" class="hover:text-yellow-400">Interview Preparation</a></li>
+      <li><a href="#" class="hover:text-yellow-400">Roadmaps</a></li>
+    </ul>
+    <div class="hidden md:flex space-x-4">
+      <a href="/frontend/login.html"
+        class="px-4 py-2 rounded-lg border border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black transition scale-hover">Login</a>
+      <a href="/frontend/signup.html"
+        class="px-4 py-2 rounded-lg bg-yellow-400 text-black hover:bg-yellow-300 transition scale-hover">Sign
+        Up</a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="pt-32 pb-20 text-center px-4">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4 animate__animated animate__fadeInUp">
+      Welcome to <span class="text-yellow-400">UdaanRise</span>
+    </h1>
+    <p class="text-gray-300 mb-6 animate__animated animate__fadeInUp animate__delay-1s">
+      Your ultimate career companion <span class="text-yellow-400">Explore, Learn, Rise</span>
+    </p>
+
+    <a href="/frontend/signup.html"
+      class="gold gold-hover font-semibold py-2 px-6 rounded-xl animate__animated animate__fadeInUp animate__delay-2s scale-hover">
+      Get Started
+    </a>
+
+
+    <!-- Already have an account section with spacing -->
+    <div style="margin-top: 2.5rem; " class="mt-4 animate__animated animate__fadeInUp animate__delay-3s">
+      <p style="font-style: italic;" class="text-gray-300 mb-6 animate__animated animate__fadeInUp animate__delay-1s">
+        Already have an account?
+      </p>
+      <a href="/frontend/login.html"
+        class="gold gold-hover font-semibold py-2 px-6 rounded-xl animate__animated animate__fadeInUp animate__delay-2s scale-hover">
+        Sign In
+      </a>
+    </div>
+  </section>
+
+  <!-- SERVICES CARDS -->
+  <section class="max-w-7xl mx-auto px-4 pb-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Card Template -->
+    <div class="glass gold-border p-6 text-center scale-hover">
+      <h3 class="text-xl font-semibold mb-2 text-yellow-300">Career Roadmaps</h3>
+      <p class="text-gray-300 mb-4">Step-by-step guidance for every career field.</p>
+      <button class="gold gold-hover px-4 py-2 rounded-lg font-medium">Get Started</button>
+    </div>
+
+    <div class="glass gold-border p-6 text-center scale-hover">
+      <h3 class="text-xl font-semibold mb-2 text-yellow-300">Job Listings</h3>
+      <p class="text-gray-300 mb-4">Latest curated jobs across top companies.</p>
+      <button class="gold gold-hover px-4 py-2 rounded-lg font-medium">Get Started</button>
+    </div>
+
+    <div class="glass gold-border p-6 text-center scale-hover">
+      <h3 class="text-xl font-semibold mb-2 text-yellow-300">Career Counselling</h3>
+      <p class="text-gray-300 mb-4">1-on-1 expert guidance for your journey.</p>
+      <button class="gold gold-hover px-4 py-2 rounded-lg font-medium">Get Started</button>
+    </div>
+
+    <div class="glass gold-border p-6 text-center scale-hover">
+      <h3 class="text-xl font-semibold mb-2 text-yellow-300">Mentorship</h3>
+      <p class="text-gray-300 mb-4">Personal mentorship from industry professionals.</p>
+      <button class="gold gold-hover px-4 py-2 rounded-lg font-medium">Get Started</button>
+    </div>
+
+    <div class="glass gold-border p-6 text-center scale-hover">
+      <h3 class="text-xl font-semibold mb-2 text-yellow-300">Resume Builder</h3>
+      <p class="text-gray-300 mb-4">Create professional resumes in minutes.</p>
+      <button class="gold gold-hover px-4 py-2 rounded-lg font-medium">Get Started</button>
+    </div>
+
+    <div class="glass gold-border p-6 text-center scale-hover">
+      <h3 class="text-xl font-semibold mb-2 text-yellow-300">Interview Preparation</h3>
+      <p class="text-gray-300 mb-4">Crack interviews with confidence and tips.</p>
+      <button class="gold gold-hover px-4 py-2 rounded-lg font-medium">Get Started</button>
+    </div>
+  </section>
+</body>
+
+</html>

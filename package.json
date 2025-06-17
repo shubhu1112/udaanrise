@@ -1,0 +1,17 @@
+{
+  "name": "udaanrise",
+  "version": "1.0.0",
+  "description": "Career platform with Tailwind and Python",
+  "scripts": {
+    "build": "tailwindcss -i ./src/css/input.css -o ./dist/output.css --minify"
+  },
+
+
+
+
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.5",
+    "tailwindcss": "^4.1.10"
+  }
+}
